@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>targil 11</title>
+</head>
+<body>
+    <form>
+        <p>input number : <input id="id1_number" type="number" /></p>
+        <p>click here : <button type="button" onclick="dialaayoub()"> Click me! </button></p>
+    </form>
+    <script>
+        function dialaayoub(){
+
+        y = parseInt(document.getElementById('id1_number').value)
+        x = 0
+        
+
+        while(x < y){
+            y = Math.floor(y / 10)
+            x++
+            
+        }
+        document.write(`${x + y} <br/>`)
+    }
+
+        
+    </script>
+    <img src="targil 11.jpg" alt="flowchart11">
+    
+</body>
+</html>

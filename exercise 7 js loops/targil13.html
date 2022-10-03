@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>targil 13</title>
+</head>
+<body>
+    <form> 
+
+    <p> number 1: <input id="id1_number" type="number" /></p>
+    <p> number 2: <input id="id2_number" type="number" /></p>
+
+    <p>click here: <button type="button" onclick="Clicl1()"> Click me! </button></p>
+
+    </form>
+
+<script>
+    function Clicl1() {
+
+    x = parseInt(document.getElementById('id1_number').value)
+    dig = parseInt(document.getElementById('id2_number').value)
+
+    sum = 0
+
+    
+
+    while ( x > 0 ){
+       if (x % 10 == dig) {
+       sum++
+       }
+       if (Math.floor (x / 10) == dig ){
+        sum ++
+       }
+       x = Math.floor (x / 10) 
+
+    }
+
+
+    document.write(`${sum}`)
+
+   
+}
+
+</script>
+
+</body>
+</html>

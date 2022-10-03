@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>targil ! </title>
+</head>
+<body>
+    <form>
+        <p> number : <input id="id1_number" type="number" /></p>
+        <p>click here : <button type="button" onclick="Click2()"> Click me! </button></p>
+    </form>
+    <script>
+        function Click2() {
+
+        n = parseInt(document.getElementById('id1_number').value)
+        
+        sum = 1
+
+
+        while (n > 0){
+            sum = sum * n
+            n--
+        }
+        document.write(`${sum} <br/>`)
+    }
+
+    </script>
+    <img src="targil !.jpg" alt="flowchart!">
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>targil 12</title>
+</head>
+<body>
+    <form>
+        <p>input number : <input id="id1_number" type="number" /></p>
+        <p>click here : <button type="button" onclick="Click()"> Click me! </button></p>
+    </form>
+    <script>
+        function Click(){
+
+        a = parseInt(document.getElementById('id1_number').value)
+        sum = 0
+
+        while(a > 0){
+            sum = sum + (a % 10)
+            a = Math.floor(a / 10)
+            
+        }
+        document.write(`${sum} <br/>`)
+    }
+
+        
+    </script>
+    <img src="targil 12.jpg" alt="flowchart12" >
+    
+</body>
+</html>

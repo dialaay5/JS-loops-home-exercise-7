@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>targil 14</title>
+</head>
+<body>
+    <p> number : <input id="id1_number" type="number" /></p>
+    <p>click here : <button type="button" onclick="Click2()"> Click me! </button></p>
+</form>
+<script>
+    function Click2() {
+
+    x = parseInt(document.getElementById('id1_number').value)
+    y = 0      
+
+    while( x > 0){
+      y = y + (x % 10)
+      x = Math.floor(x / 10)
+      y = y * 10
+
+    }
+    document.write(`${y / 10} <br/>`)
+}
+
+</script>
+<img src="targil 14.jpg" alt="flowchart14">
+
+    
+</body>
+</html>
